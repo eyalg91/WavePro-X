@@ -1,0 +1,18 @@
+# Project Context
+You are assisting a physicist in building "WavePro-X", an optical metrology software for fringe analysis, phase extraction, and hardware control. 
+Keep solutions mathematically rigorous but architecturally simple. Do not over-engineer.
+
+# Language & Comments
+- ALL code comments MUST be written in English.
+- Keep explanations in the chat in the language the user speaks, but code elements must remain in English.
+
+# Architecture & Design Rules
+- Keep the architecture simple and flat. Do not create unnecessary nested folders, abstract classes, or design patterns unless explicitly requested.
+- Strictly separate UI components from physics/mathematics calculations.
+- The UI will be built using PySide6. Do not use Tkinter, PyQt5, or others.
+- Core mathematical operations should use numpy and scipy.
+
+# Coding Standards
+- Use Python type hints for all function arguments and return types (e.g., `def extract_phase(data: np.ndarray) -> np.ndarray:`).
+- Keep functions short and focused on a single task.
+- When generating or modifying code, output only the requested changes. Do not rewrite working code from other modules to fix local bugs.
