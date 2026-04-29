@@ -1,0 +1,29 @@
+# WavePro-X
+
+**WavePro-X** is an optical metrology software designed for fringe analysis, phase extraction, and wavefront characterization. Built by a physicist for laboratory environments, it focuses on high-precision measurements using temporal phase-shifting algorithms.
+
+## Current Status (Alpha)
+The project is currently in the initial development phase (**Phase 1**), focusing on core mathematical algorithms and synthetic data generation.
+
+### Key Features (Implemented):
+* **Advanced Synthetic Generator:** Simulates realistic interferograms with non-uniform illumination, intensity gradients, and camera noise for robust testing.
+* **Phase Extraction Core:** Implementation of professional-grade algorithms:
+    * **4-Step Algorithm:** Standard phase-shifting.
+    * **Schwider-Hariharan 5-Step Algorithm:** Robust against linear phase-shift errors and intensity gradients.
+
+## Project Structure
+* `core/`: Mathematical engine (Phase extraction, unwrapping, Zernike fitting).
+* `dev_tools/`: Simulation and verification utilities.
+* `ui/`: (Pending) PySide6-based graphical user interface.
+* `hardware/`: (Pending) Abstraction layers for camera and piezo control.
+
+## Getting Started
+
+### Prerequisites
+* Python 3.10+
+* NumPy, SciPy, Matplotlib
+
+### Running the Verification Tests
+To verify the phase extraction math against aggressive synthetic noise, run:
+```bash
+python dev_tools/test_phase_extraction.py
